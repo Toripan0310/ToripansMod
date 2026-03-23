@@ -1,6 +1,7 @@
 package com.github.toripan0310.toripans.item;
 
 import com.github.toripan0310.toripans.ToripansMod;
+import com.github.toripan0310.toripans.block.ToripansBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,6 +20,8 @@ public class ToripansTabs {
                     .displayItems(((pParameters, pOutput) -> {
                         pOutput.accept(ToripansItems.TORIPAN_EGG.get());
                         pOutput.accept(ToripansItems.TORIPAN_JWEL.get());
+                        pOutput.accept(ToripansBlocks.TORIPAN_JWEL_BLOCK.get());
+                        pOutput.accept(ToripansBlocks.TORIPAN_JWEL_ORE.get());
                         pOutput.accept(ToripansItems.TORIPAN_MEAT.get());
                         pOutput.accept(ToripansItems.COOKED_TORIPAN_MEAT.get());
                     }))

@@ -1,6 +1,7 @@
 package com.github.toripan0310.toripans.datagen.client;
 
 import com.github.toripan0310.toripans.ToripansMod;
+import com.github.toripan0310.toripans.block.ToripansBlocks;
 import com.github.toripan0310.toripans.item.ToripansItems;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.LanguageProvider;
@@ -16,6 +17,8 @@ public class ENUSLanguageProvider extends LanguageProvider {
     protected void addTranslations() {
         addItem(ToripansItems.TORIPAN_EGG, "Toripan Egg");
         addItem(ToripansItems.TORIPAN_JWEL, "Toripan Jwel");
+        addBlock(ToripansBlocks.TORIPAN_JWEL_BLOCK, "Toripan Jwel Block");
+        addBlock(ToripansBlocks.TORIPAN_JWEL_ORE, "Toripan Jwel Ore");
         addItem(ToripansItems.TORIPAN_MEAT, "Toripan Meat");
         addItem(ToripansItems.COOKED_TORIPAN_MEAT, "Cooked Toripan Meat");
 

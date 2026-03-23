@@ -3,6 +3,7 @@ package com.github.toripan0310.toripans.datagen;
 import com.github.toripan0310.toripans.ToripansMod;
 import com.github.toripan0310.toripans.datagen.client.ENUSLanguageProvider;
 import com.github.toripan0310.toripans.datagen.client.JAJPLanguageProvider;
+import com.github.toripan0310.toripans.datagen.client.ToripansBlockStateProvider;
 import com.github.toripan0310.toripans.datagen.client.ToripansItemModelProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
@@ -25,8 +26,12 @@ public class ToripansDataGenerators {
 
         generator.addProvider(event.includeClient(), new ToripansItemModelProvider(packOutput,
                 existingFileHelper));
+        generator.addProvider(event.includeClient(), new ToripansBlockStateProvider(packOutput,
+                existingFileHelper));
 
         generator.addProvider(event.includeClient(), new ENUSLanguageProvider(packOutput));
         generator.addProvider(event.includeClient(), new JAJPLanguageProvider(packOutput));
+
+
     }
 }

@@ -1,6 +1,7 @@
 package com.github.toripan0310.toripans.datagen.client;
 
 import com.github.toripan0310.toripans.ToripansMod;
+import com.github.toripan0310.toripans.block.ToripansBlocks;
 import com.github.toripan0310.toripans.item.ToripansItems;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.LanguageProvider;
@@ -16,6 +17,8 @@ public class JAJPLanguageProvider extends LanguageProvider {
     protected void addTranslations() {
         addItem(ToripansItems.TORIPAN_EGG, "卵のtoripan");
         addItem(ToripansItems.TORIPAN_JWEL, "宝石のtoripan");
+        addBlock(ToripansBlocks.TORIPAN_JWEL_BLOCK, "宝石のtoripanブロック");
+        addBlock(ToripansBlocks.TORIPAN_JWEL_ORE, "宝石のtoripanの原石ブロック");
         addItem(ToripansItems.TORIPAN_MEAT, "toripan");
         addItem(ToripansItems.COOKED_TORIPAN_MEAT, "焼きたてのtoripan");
 
