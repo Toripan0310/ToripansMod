@@ -24,6 +24,7 @@ public class ToripansTabs {
                         pOutput.accept(ToripansBlocks.TORIPAN_JWEL_ORE.get());
                         pOutput.accept(ToripansItems.TORIPAN_MEAT.get());
                         pOutput.accept(ToripansItems.COOKED_TORIPAN_MEAT.get());
+                        pOutput.accept(ToripansItems.YAKITORI.get());
                     }))
                     .build());
 

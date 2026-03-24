@@ -21,6 +21,7 @@ public class JAJPLanguageProvider extends LanguageProvider {
         addBlock(ToripansBlocks.TORIPAN_JWEL_ORE, "宝石のtoripanの原石ブロック");
         addItem(ToripansItems.TORIPAN_MEAT, "toripan");
         addItem(ToripansItems.COOKED_TORIPAN_MEAT, "焼きたてのtoripan");
+        addItem(ToripansItems.YAKITORI, "焼き鳥");
 
         add("creativetabs.toripan_tab", "Toripan");
 

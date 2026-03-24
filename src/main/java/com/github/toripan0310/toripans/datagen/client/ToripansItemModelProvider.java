@@ -17,6 +17,7 @@ public class ToripansItemModelProvider extends ItemModelProvider {
         basicItem(ToripansItems.TORIPAN_JWEL.get());
         basicItem(ToripansItems.TORIPAN_MEAT.get());
         basicItem(ToripansItems.COOKED_TORIPAN_MEAT.get());
+        basicItem(ToripansItems.YAKITORI.get());
 
     }
 }

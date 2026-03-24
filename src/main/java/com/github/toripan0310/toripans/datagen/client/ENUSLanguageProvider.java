@@ -21,6 +21,8 @@ public class ENUSLanguageProvider extends LanguageProvider {
         addBlock(ToripansBlocks.TORIPAN_JWEL_ORE, "Toripan Jwel Ore");
         addItem(ToripansItems.TORIPAN_MEAT, "Toripan Meat");
         addItem(ToripansItems.COOKED_TORIPAN_MEAT, "Cooked Toripan Meat");
+        addItem(ToripansItems.YAKITORI, "Yakitori");
+
 
         add("creativetabs.toripan_tab", "Toripan");
 

@@ -35,6 +35,15 @@ public class ToripansItems {
                     .build())
             .fireResistant()));
 
+
+    public static final RegistryObject<Item> YAKITORI = ITEMS.register("yakitori", () -> new Item(new Item.Properties()
+            .food(new FoodProperties.Builder()
+                    .nutrition(21)
+                    .saturationMod(0.7f)
+                    .effect( () -> new MobEffectInstance(MobEffects.REGENERATION, 10, 0), 100f)
+                    .build())
+            .fireResistant()));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
