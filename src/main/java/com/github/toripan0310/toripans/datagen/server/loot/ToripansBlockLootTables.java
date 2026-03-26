@@ -1,0 +1,29 @@
+package com.github.toripan0310.toripans.datagen.server.loot;
+
+import com.github.toripan0310.toripans.block.ToripansBlocks;
+import com.github.toripan0310.toripans.item.ToripansItems;
+import net.minecraft.data.loot.BlockLootSubProvider;
+import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.level.block.Block;
+import net.minecraftforge.registries.RegistryObject;
+
+import java.util.Set;
+
+public class ToripansBlockLootTables extends BlockLootSubProvider {
+    protected ToripansBlockLootTables() {
+        super(Set.of(), FeatureFlags.REGISTRY.allFlags());
+    }
+
+    @Override
+    protected void generate() {
+
+        this.dropSelf(ToripansBlocks.TORIPAN_JWEL_BLOCK.get());
+        this.dropOther(ToripansBlocks.TORIPAN_JWEL_ORE.get(), ToripansItems.TORIPAN_JWEL.get());
+
+    }
+
+    @Override
+    protected Iterable<Block> getKnownBlocks() {
+        return ToripansBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
+    }
+}

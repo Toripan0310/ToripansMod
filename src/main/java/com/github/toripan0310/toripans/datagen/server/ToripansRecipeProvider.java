@@ -37,8 +37,8 @@ public class ToripansRecipeProvider extends RecipeProvider {
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ToripansItems.YAKITORI.get())
                 .pattern(" M ")
                 .pattern(" M ")
-                .pattern("SM ")
-                .define('S', Items.STICK)
+                .pattern("BM ")
+                .define('B', Items.BONE)
                 .define('M', ToripansItems.COOKED_TORIPAN_MEAT.get())
                 .unlockedBy("has_cooked_toriapn_meat", has(ToripansItems.COOKED_TORIPAN_MEAT.get()))
                 .save(pWriter);
