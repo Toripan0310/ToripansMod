@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "toripans:block/stripped_toripan_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "toripans:block/stripped_toripan_log"
+    },
+    "axis=z": {
+      "model": "toripans:block/stripped_toripan_log_horizontal",
+      "x": 90
+    }
+  }
+}

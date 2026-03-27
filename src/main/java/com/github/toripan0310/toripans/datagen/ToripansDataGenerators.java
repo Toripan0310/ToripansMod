@@ -5,10 +5,7 @@ import com.github.toripan0310.toripans.datagen.client.ENUSLanguageProvider;
 import com.github.toripan0310.toripans.datagen.client.JAJPLanguageProvider;
 import com.github.toripan0310.toripans.datagen.client.ToripansBlockStateProvider;
 import com.github.toripan0310.toripans.datagen.client.ToripansItemModelProvider;
-import com.github.toripan0310.toripans.datagen.server.ToripansBlockTagsProvider;
-import com.github.toripan0310.toripans.datagen.server.ToripansGlobalLootModifierProvider;
-import com.github.toripan0310.toripans.datagen.server.ToripansRecipeProvider;
-import com.github.toripan0310.toripans.datagen.server.ToripansWorldGenProvider;
+import com.github.toripan0310.toripans.datagen.server.*;
 import com.github.toripan0310.toripans.datagen.server.loot.ToripansLootTables;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
@@ -41,11 +38,14 @@ public class ToripansDataGenerators {
 
         generator.addProvider(event.includeServer(), ToripansLootTables.create(packOutput));
 
-        generator.addProvider(event.includeServer(), new ToripansBlockTagsProvider(packOutput,
+        var blockTagsProvider = generator.addProvider(event.includeServer(), new ToripansBlockTagsProvider(packOutput,
                 LookUpProvider, existingFileHelper));
 
-        generator.addProvider(event.includeServer(), new
-                ToripansGlobalLootModifierProvider(packOutput));
+        generator.addProvider(event.includeServer(), new ToripansItemTagsProvider(
+                packOutput, LookUpProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
+
+        generator.addProvider(event.includeServer(),
+                new ToripansGlobalLootModifierProvider(packOutput));
 
         generator.addProvider(event.includeServer(),
                 new ToripansWorldGenProvider(packOutput, LookUpProvider));

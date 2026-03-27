@@ -2,6 +2,7 @@ package com.github.toripan0310.toripans.datagen.server;
 
 import com.github.toripan0310.toripans.ToripansMod;
 import com.github.toripan0310.toripans.block.ToripansBlocks;
+import com.github.toripan0310.toripans.tag.ToripansTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -30,5 +31,24 @@ public class ToripansBlockTagsProvider extends BlockTagsProvider {
 
         this.tag(BlockTags.BEACON_BASE_BLOCKS)
                 .add(ToripansBlocks.TORIPAN_JWEL_BLOCK.get());
+
+        this.tag(ToripansTags.Blocks.TORIPAN_LOG)
+                .add(ToripansBlocks.TORIPAN_LOG.get())
+                .add(ToripansBlocks.STRIPPED_TORIPAN_LOG.get())
+                .add(ToripansBlocks.TORIPAN_WOOD.get())
+                .add(ToripansBlocks.STRIPPED_TORIPAN_WOOD.get());
+
+        this.tag(BlockTags.LOGS)
+                .add(ToripansBlocks.TORIPAN_LOG.get())
+                .add(ToripansBlocks.STRIPPED_TORIPAN_LOG.get());
+
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ToripansBlocks.TORIPAN_LOG.get())
+                .add(ToripansBlocks.STRIPPED_TORIPAN_LOG.get())
+                .add(ToripansBlocks.TORIPAN_WOOD.get())
+                .add(ToripansBlocks.STRIPPED_TORIPAN_WOOD.get());
+
+        this.tag(BlockTags.LEAVES)
+                .add(ToripansBlocks.TORIPAN_LEAVES.get());
     }
 }

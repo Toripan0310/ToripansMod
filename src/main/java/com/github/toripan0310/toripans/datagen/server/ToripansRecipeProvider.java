@@ -43,6 +43,11 @@ public class ToripansRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_cooked_toriapn_meat", has(ToripansItems.COOKED_TORIPAN_MEAT.get()))
                 .save(pWriter);
 
+        woodFromLogs(pWriter, ToripansBlocks.TORIPAN_WOOD.get(),
+                ToripansBlocks.TORIPAN_LOG.get());
+        woodFromLogs(pWriter, ToripansBlocks.STRIPPED_TORIPAN_WOOD.get(),
+                ToripansBlocks.STRIPPED_TORIPAN_LOG.get());
+
 
     }
 

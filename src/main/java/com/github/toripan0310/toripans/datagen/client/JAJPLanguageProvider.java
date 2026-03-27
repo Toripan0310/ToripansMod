@@ -20,6 +20,11 @@ public class JAJPLanguageProvider extends LanguageProvider {
         addBlock(ToripansBlocks.TORIPAN_JWEL_BLOCK, "toripan宝石ブロック");
         addBlock(ToripansBlocks.TORIPAN_JWEL_ORE, "toripan宝石");
         addBlock(ToripansBlocks.DEEPSLATE_TORIPAN_JWEL_ORE, "深層toripan宝石");
+        addBlock(ToripansBlocks.TORIPAN_LOG, "toriの原木");
+        addBlock(ToripansBlocks.TORIPAN_WOOD, "toriの木");
+        addBlock(ToripansBlocks.TORIPAN_LEAVES, "Toriの葉");
+        addBlock(ToripansBlocks.STRIPPED_TORIPAN_LOG, "樹皮を剥いだtoriの原木");
+        addBlock(ToripansBlocks.STRIPPED_TORIPAN_WOOD, "樹皮を剥いだToriの木");
         addItem(ToripansItems.TORIPAN_MEAT, "toripan");
         addItem(ToripansItems.COOKED_TORIPAN_MEAT, "焼きたてのtoripan");
         addItem(ToripansItems.YAKITORI, "焼き鳥");

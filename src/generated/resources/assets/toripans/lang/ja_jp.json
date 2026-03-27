@@ -1,7 +1,12 @@
 {
   "block.toripans.deepslate_toripan_jwel_ore": "深層toripan宝石",
+  "block.toripans.stripped_toripan_log": "樹皮を剥いだtoriの原木",
+  "block.toripans.stripped_toripan_wood": "樹皮を剥いだToriの木",
   "block.toripans.toripan_jwel_block": "toripan宝石ブロック",
   "block.toripans.toripan_jwel_ore": "toripan宝石",
+  "block.toripans.toripan_leaves": "Toriの葉",
+  "block.toripans.toripan_log": "toriの原木",
+  "block.toripans.toripan_wood": "toriの木",
   "creativetabs.toripan_tab": "Toripan",
   "item.toripans.cooked_toripan_meat": "焼きたてのtoripan",
   "item.toripans.toripan_egg": "tori卵",
