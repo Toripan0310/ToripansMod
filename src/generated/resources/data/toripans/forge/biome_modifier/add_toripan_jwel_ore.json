@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "toripans:ore_toripan_jwel",
+  "step": "underground_ores"
+}

@@ -20,11 +20,13 @@ public class ToripansBlockTagsProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ToripansBlocks.TORIPAN_JWEL_BLOCK.get(),
-                        ToripansBlocks.TORIPAN_JWEL_ORE.get());
+                        ToripansBlocks.TORIPAN_JWEL_ORE.get(),
+                        ToripansBlocks.DEEPSLATE_TORIPAN_JWEL_ORE.get());
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ToripansBlocks.TORIPAN_JWEL_BLOCK.get(),
-                        ToripansBlocks.TORIPAN_JWEL_ORE.get());
+                        ToripansBlocks.TORIPAN_JWEL_ORE.get(),
+                        ToripansBlocks.DEEPSLATE_TORIPAN_JWEL_ORE.get());
 
         this.tag(BlockTags.BEACON_BASE_BLOCKS)
                 .add(ToripansBlocks.TORIPAN_JWEL_BLOCK.get());

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "toripans:block/deepslate_toripan_jwel_ore"
+  }
+}

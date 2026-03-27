@@ -18,6 +18,7 @@ public class ToripansBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         simpleBlockWithItem(ToripansBlocks.TORIPAN_JWEL_BLOCK);
         simpleBlockWithItem(ToripansBlocks.TORIPAN_JWEL_ORE);
+        simpleBlockWithItem(ToripansBlocks.DEEPSLATE_TORIPAN_JWEL_ORE);
 
     }
 

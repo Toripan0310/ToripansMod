@@ -15,10 +15,11 @@ public class JAJPLanguageProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-        addItem(ToripansItems.TORIPAN_EGG, "卵のtoripan");
-        addItem(ToripansItems.TORIPAN_JWEL, "宝石のtoripan");
-        addBlock(ToripansBlocks.TORIPAN_JWEL_BLOCK, "宝石のtoripanブロック");
-        addBlock(ToripansBlocks.TORIPAN_JWEL_ORE, "宝石のtoripanの原石ブロック");
+        addItem(ToripansItems.TORIPAN_EGG, "tori卵");
+        addItem(ToripansItems.TORIPAN_JWEL, "toripan宝石");
+        addBlock(ToripansBlocks.TORIPAN_JWEL_BLOCK, "toripan宝石ブロック");
+        addBlock(ToripansBlocks.TORIPAN_JWEL_ORE, "toripan宝石");
+        addBlock(ToripansBlocks.DEEPSLATE_TORIPAN_JWEL_ORE, "深層toripan宝石");
         addItem(ToripansItems.TORIPAN_MEAT, "toripan");
         addItem(ToripansItems.COOKED_TORIPAN_MEAT, "焼きたてのtoripan");
         addItem(ToripansItems.YAKITORI, "焼き鳥");

@@ -1,10 +1,11 @@
 {
-  "block.toripans.toripan_jwel_block": "宝石のtoripanブロック",
-  "block.toripans.toripan_jwel_ore": "宝石のtoripanの原石ブロック",
+  "block.toripans.deepslate_toripan_jwel_ore": "深層toripan宝石",
+  "block.toripans.toripan_jwel_block": "toripan宝石ブロック",
+  "block.toripans.toripan_jwel_ore": "toripan宝石",
   "creativetabs.toripan_tab": "Toripan",
   "item.toripans.cooked_toripan_meat": "焼きたてのtoripan",
-  "item.toripans.toripan_egg": "卵のtoripan",
-  "item.toripans.toripan_jwel": "宝石のtoripan",
+  "item.toripans.toripan_egg": "tori卵",
+  "item.toripans.toripan_jwel": "toripan宝石",
   "item.toripans.toripan_meat": "toripan",
   "item.toripans.yakitori": "焼き鳥"
 }
