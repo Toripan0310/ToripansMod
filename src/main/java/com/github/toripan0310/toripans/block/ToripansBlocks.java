@@ -5,6 +5,7 @@ import com.github.toripan0310.toripans.block.custom.ToripansLeavesBlock;
 import com.github.toripan0310.toripans.block.custom.ToripansLogBlock;
 import com.github.toripan0310.toripans.block.custom.ToripansStrippableLogBlock;
 import com.github.toripan0310.toripans.item.ToripansItems;
+import com.github.toripan0310.toripans.worldgen.tree.ToripanTreeGrower;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -94,6 +95,9 @@ public class ToripansBlocks {
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
                     BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS),
                     BlockSetType.DARK_OAK));
+
+    public static final RegistryObject<Block> TORIPAN_SAPLING = registerBlockItem("toripan_sapling",
+            () -> new SaplingBlock(new ToripanTreeGrower(), BlockBehaviour.Properties.copy(Blocks.DARK_OAK_SAPLING)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlockItem(String name,

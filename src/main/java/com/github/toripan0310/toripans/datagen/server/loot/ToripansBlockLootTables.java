@@ -27,7 +27,7 @@ public class ToripansBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ToripansBlocks.TORIPAN_WOOD.get());
         this.dropSelf(ToripansBlocks.STRIPPED_TORIPAN_WOOD.get());
         this.add(ToripansBlocks.TORIPAN_LEAVES.get(), block ->
-                createLeavesDrops(block, ToripansBlocks.TORIPAN_JWEL_BLOCK.get(),
+                createLeavesDrops(block, ToripansBlocks.TORIPAN_SAPLING.get(),
                         NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.dropSelf(ToripansBlocks.TORIPAN_PLANKS.get());
@@ -42,6 +42,8 @@ public class ToripansBlockLootTables extends BlockLootSubProvider {
                 createSlabItemTable(ToripansBlocks.TORIPAN_SLAB.get()));
         this.add(ToripansBlocks.TORIPAN_DOOR.get(),
                 createDoorTable(ToripansBlocks.TORIPAN_DOOR.get()));
+
+        this.dropSelf(ToripansBlocks.TORIPAN_SAPLING.get());
 
     }
 

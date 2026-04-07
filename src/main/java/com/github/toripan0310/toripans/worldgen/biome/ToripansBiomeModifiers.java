@@ -1,7 +1,7 @@
 package com.github.toripan0310.toripans.worldgen.biome;
 
 import com.github.toripan0310.toripans.ToripansMod;
-import com.github.toripan0310.toripans.worldgen.placement.ToripansOrePlacement;
+import com.github.toripan0310.toripans.worldgen.placement.ToripansPlacement;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
@@ -28,7 +28,7 @@ public class ToripansBiomeModifiers {
 
         context.register(ADD_TORIPAN_JWEL_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(ToripansOrePlacement.ORE_TORIPAN_JWEL)),
+                HolderSet.direct(placedFeatures.getOrThrow(ToripansPlacement.ORE_TORIPAN_JWEL)),
                 GenerationStep.Decoration.UNDERGROUND_ORES
         ));
     }

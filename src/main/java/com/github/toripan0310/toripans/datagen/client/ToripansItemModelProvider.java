@@ -35,6 +35,8 @@ public class ToripansItemModelProvider extends ItemModelProvider {
         fence(ToripansBlocks.TORIPAN_FENCE, ToripansBlocks.TORIPAN_PLANKS);
         button(ToripansBlocks.TORIPAN_BUTTON, ToripansBlocks.TORIPAN_PLANKS);
 
+        sapling(ToripansBlocks.TORIPAN_SAPLING);
+
     }
     public void itemWithBlock(RegistryObject<Block> block) {
         this.getBuilder(ForgeRegistries.BLOCKS.getKey(block.get()).getPath())
@@ -59,5 +61,11 @@ public class ToripansItemModelProvider extends ItemModelProvider {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/button_inventory"))
                 .texture("texture",  new ResourceLocation(ToripansMod.MOD_ID,
                         "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+    @SuppressWarnings({ "unchecked", "removal" })
+    private void sapling(RegistryObject<Block> block) {
+        this.withExistingParent(block.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(ToripansMod.MOD_ID,"block/" + block.getId().getPath()));
     }
 }

@@ -37,6 +37,7 @@ public class JAJPLanguageProvider extends LanguageProvider {
         addBlock(ToripansBlocks.TORIPAN_BUTTON, "toriのボタン");
         addBlock(ToripansBlocks.TORIPAN_SLAB, "toriのハーフブロック");
         addBlock(ToripansBlocks.TORIPAN_STAIRS, "toriの階段");
+        addBlock(ToripansBlocks.TORIPAN_SAPLING, "Toriの苗木");
 
         add("creativetabs.toripan_tab", "Toripan");
 

@@ -2,8 +2,8 @@ package com.github.toripan0310.toripans.datagen.server;
 
 import com.github.toripan0310.toripans.ToripansMod;
 import com.github.toripan0310.toripans.worldgen.biome.ToripansBiomeModifiers;
-import com.github.toripan0310.toripans.worldgen.features.ToripansOreFeatures;
-import com.github.toripan0310.toripans.worldgen.placement.ToripansOrePlacement;
+import com.github.toripan0310.toripans.worldgen.features.ToripansFeatures;
+import com.github.toripan0310.toripans.worldgen.placement.ToripansPlacement;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
@@ -16,8 +16,8 @@ import java.util.concurrent.CompletableFuture;
 
 public class ToripansWorldGenProvider extends DatapackBuiltinEntriesProvider {
     private static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
-            .add(Registries.CONFIGURED_FEATURE, ToripansOreFeatures::bootstrap)
-            .add(Registries.PLACED_FEATURE, ToripansOrePlacement::bootstrap)
+            .add(Registries.CONFIGURED_FEATURE, ToripansFeatures::bootstrap)
+            .add(Registries.PLACED_FEATURE, ToripansPlacement::bootstrap)
             .add(ForgeRegistries.Keys.BIOME_MODIFIERS, ToripansBiomeModifiers::bootstrap);
 
     public ToripansWorldGenProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {

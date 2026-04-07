@@ -1,7 +1,7 @@
 package com.github.toripan0310.toripans.worldgen.placement;
 
 import com.github.toripan0310.toripans.ToripansMod;
-import com.github.toripan0310.toripans.worldgen.features.ToripansOreFeatures;
+import com.github.toripan0310.toripans.worldgen.features.ToripansFeatures;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
@@ -14,9 +14,7 @@ import net.minecraft.world.level.levelgen.placement.*;
 
 import java.util.List;
 
-import static com.github.toripan0310.toripans.worldgen.features.ToripansOreFeatures.createKey;
-
-public class ToripansOrePlacement {
+public class ToripansPlacement {
     public static final ResourceKey<PlacedFeature> ORE_TORIPAN_JWEL =
             createKey("ore_toripan_jwel");
 
@@ -25,7 +23,7 @@ public class ToripansOrePlacement {
                 context.lookup(Registries.CONFIGURED_FEATURE);
 
         PlacementUtils.register(context, ORE_TORIPAN_JWEL,
-                configuredFeatures.getOrThrow(ToripansOreFeatures.TORIPAN_JWEL_ORE_KEY),
+                configuredFeatures.getOrThrow(ToripansFeatures.TORIPAN_JWEL_ORE_KEY),
                 commonOrePlacement(90,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64),
                                 VerticalAnchor.absolute(112))));

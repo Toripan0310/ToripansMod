@@ -61,6 +61,8 @@ public class ToripansBlockStateProvider extends BlockStateProvider {
         pressurePlateBlock((PressurePlateBlock) ToripansBlocks.TORIPAN_PRESSURE_PLATE.get(),
                 blockTexture(ToripansBlocks.TORIPAN_PLANKS.get()));
 
+        sapling(ToripansBlocks.TORIPAN_SAPLING);
+
 
 
     }
@@ -81,6 +83,12 @@ public class ToripansBlockStateProvider extends BlockStateProvider {
         simpleBlockWithItem(block.get(), models().singleTexture(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
                 new ResourceLocation("minecraft:block/leaves"),
                 "all", blockTexture(block.get())).renderType("cutout"));
+    }
+
+    private void sapling(RegistryObject<Block> blockRegistryObject) {
+        simpleBlock(blockRegistryObject.get(),
+                models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(),
+                        blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
 

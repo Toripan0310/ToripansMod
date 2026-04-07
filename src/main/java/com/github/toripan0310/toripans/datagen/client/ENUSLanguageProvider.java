@@ -37,6 +37,7 @@ public class ENUSLanguageProvider extends LanguageProvider {
         addBlock(ToripansBlocks.TORIPAN_BUTTON, "Toripan Button");
         addBlock(ToripansBlocks.TORIPAN_SLAB, "Toripan Slab");
         addBlock(ToripansBlocks.TORIPAN_STAIRS, "Toripan Stairs");
+        addBlock(ToripansBlocks.TORIPAN_SAPLING, "Toripan Sapling");
 
 
         add("creativetabs.toripan_tab", "Toripan");
